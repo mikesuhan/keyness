@@ -3,13 +3,8 @@ rank ordering the output by the log likelihood values of the corpus.
 
 The corpus and reference corpus must be iterables or tokenized texts. For example, a list of lists:
 
-corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'corpus'],
-        ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'corpus'],
-        ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'corpus']]
-
-reference_corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'reference', 'corpus'],
-        ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'reference', 'corpus'],
-        ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'reference', 'corpus']]
+>>> corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'corpus']]
+>>> reference_corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'reference', 'corpus']]
 
 
 log_likelihood() will return a rank ordered list with the following data in each item:
