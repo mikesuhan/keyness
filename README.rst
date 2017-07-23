@@ -14,6 +14,7 @@ log_likelihood() will return a rank ordered list with the following data in each
     - its rate in the reference corpus
 
 Example:
+
 >>> from keyness import keyness
 >>> corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'corpus']]
 >>> reference_corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'reference', 'corpus']]
