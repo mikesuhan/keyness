@@ -1,1 +1,1 @@
-from keyness import keyness
+from keyness.keyness import log_likelihood
