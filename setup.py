@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name='keyness',
+    name='Keyness',
     version='0.3',
     packages=['keyness'],
     url='https://github.com/mikesuhan/keyness',
