@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='Keyness',
-    version='0.3',
+    version='0.21',
     packages=['keyness'],
     url='https://github.com/mikesuhan/keyness',
     license='MIT License',
