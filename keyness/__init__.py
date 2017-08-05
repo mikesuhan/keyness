@@ -78,9 +78,9 @@ def log_likelihood(corpus, reference_corpus, save_as=False, dist_func=freq_dist,
         G2 = 2 * ((a * ln(a / E1)) + (b * ln(b / E2)))
 
         # Makes a row in the output list as follows:
-        # word,  log likelihood value, corpus frequency, corpus rate, ref corpus frequency, ref corpus rate
+        # word,  log likelihood value, corpus frequency, ref corpus frequency
         # round() is used on frequencies so that dummy_zero values are rounded to 0
-        output_row = word, round(G2, 3), round(a), round(a / c * norm_to, 3), round(b), round(b / d * norm_to, 3)
+        output_row = word, round(G2, 3), round(a), round(b)
         output.append(output_row)
 
     if save_as:
@@ -92,8 +92,7 @@ def log_likelihood(corpus, reference_corpus, save_as=False, dist_func=freq_dist,
 def tsv(output, save_as, encoding='utf8', delimiter='\t'):
     """Saves the result of log_likelihood as a tsv."""
     tsv = '\n'.join(delimiter.join(str(item) for item in line) for line in output)
-    header = '', 'Log Likelihood', 'Corpus Count', 'Corpus Rate', \
-             'Ref. Corpus Count', 'Ref. Corpus Rate'
+    header = 'Word', 'LL', 'CC', 'RCC',
     tsv = delimiter.join(header) + '\n' + tsv
 
     with open(save_as, 'w', encoding=encoding) as f:
