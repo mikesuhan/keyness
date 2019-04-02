@@ -22,8 +22,8 @@ def freq_dist(corpus):
     output = {}
 
     for text in corpus:
-        for word_type in set(text):
-            output[word_type] = output.get(word_type, 0) + 1
+        for word in text:
+            output[word] = output.get(word, 0) + 1
 
     return output
 
