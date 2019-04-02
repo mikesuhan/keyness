@@ -1,15 +1,13 @@
-# Installation
+#Installation
 
 pip install keyness
 
-# Overview
+#Overview
 
 The log_likelihood() function compares the frequencies of tokens or ngrams in a corpus and reference corpus,
 rank ordering the output by the log likelihood values of the corpus.
 
 The corpus and reference corpus must be iterables of tokenized texts. For example, a list of lists:
-
-
 
 log_likelihood() will return a rank ordered list with the following data in each item:
     - the item
