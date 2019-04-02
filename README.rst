@@ -18,6 +18,7 @@ Compare frequency of tokens:
 >>> reference_corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'reference', 'corpus']]
 >>> log_likelihood(corpus, reference_corpus)
 
+```
 [('reference', 3.904, 0, 3),
  ('the', 0.023, 6, 6),
  ('an', 0.011, 3, 3),
@@ -31,7 +32,7 @@ Compare frequency of tokens:
  ('second', 0.004, 1, 1),
  ('first', 0.004, 1, 1),
  ('third', 0.004, 1, 1)]
-
+```
 
 Compare frequency of types:
 
@@ -40,6 +41,7 @@ Compare frequency of types:
 >>> reference_corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'reference', 'corpus']]
 >>> log_likelihood(corpus, reference_corpus, dist_func=type_dist)
 
+```
 [('reference', 3.88, 0, 3),
  ('the', 0.014, 3, 3),
  ('in', 0.014, 3, 3),
@@ -53,3 +55,4 @@ Compare frequency of types:
  ('second', 0.005, 1, 1),
  ('first', 0.005, 1, 1),
  ('third', 0.005, 1, 1)]
+```
