@@ -1,3 +1,9 @@
+# Installation
+
+pip install keyness
+
+# Overview
+
 The log_likelihood() function compares the frequencies of tokens or ngrams in a corpus and reference corpus,
 rank ordering the output by the log likelihood values of the corpus.
 
