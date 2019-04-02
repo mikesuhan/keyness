@@ -25,6 +25,4 @@ Compare frequency of types:
 >>> corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'corpus']]
 >>> reference_corpus = [['here', 'is', 'an', 'example', 'of', 'the', 'first', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'second', 'text', 'in', 'the', 'reference', 'corpus'], ['here', 'is', 'an', 'example', 'of', 'the', 'third', 'text', 'in', 'the', 'reference', 'corpus']]
 >>> log_likelihood(corpus, reference_corpus, dist_func=type_dist)
-
-
 [('reference', 3.88, 0, 3), ('the', 0.014, 3, 3), ('in', 0.014, 3, 3), ('text', 0.014, 3, 3), ('corpus', 0.014, 3, 3), ('example', 0.014, 3, 3), ('of', 0.014, 3, 3), ('is', 0.014, 3, 3), ('an', 0.014, 3, 3), ('here', 0.014, 3, 3), ('second', 0.005, 1, 1), ('first', 0.005, 1, 1), ('third', 0.005, 1, 1)]
